@@ -12,13 +12,13 @@ pipeline {
         stage("build code"){
             steps{
               sh "mvn clean install"
-              sh "mv target/*war target/myweb.war
+              sh "mv target/*war target/webapp.war
             }
         }
         stage("deploy"){
             steps{
               sshagent(['deploy_user']) {
-                 sh "scp -o StrictHostKeyChecking=no /target/myweb.war ec2-user@13.233.81.96:/opt/apache-tomcat-8/webapps"
+                 sh "scp -o StrictHostKeyChecking=no /target/webapp.war ec2-user@13.233.81.96:/opt/apache-tomcat-8/webapps"
                   ssh ec2-user@13.233.81.96 /opt/tomcat8/bin/shutdown.sh
                   ssh ec2-user@13.233.81.96 /opt/tomcat8/bin/startup.sh
                  
