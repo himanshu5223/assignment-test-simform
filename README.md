@@ -5,6 +5,7 @@
 Configured Maven with Jenkins
 
 Step1:- Pull Jenkins Image from Docker hub and run the container and install the plugin.
+Step2:- Setup Java_home path in jenkins
 Step2:- Setup maven path in jenkins
 Step3:- clone the github repositiry with crenditails and we can take the help from generate pipeline syntax.
 Step4:- Build code with mvn packages.
