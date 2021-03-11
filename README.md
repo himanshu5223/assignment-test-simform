@@ -1,8 +1,6 @@
 # Assignment maven-project.
  
-
-
-Configured Maven with Jenkins
+Configured Maven application with Jenkins DSL Pipelines
 
 Step1:- Pull Jenkins Image from Docker hub and run the container and install the plugin.
 Step2:- Setup Java_home path in jenkins
