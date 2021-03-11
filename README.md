@@ -12,3 +12,4 @@ Step6:- Build code with mvn packages.
 Step7:- Deploy on tomcat server(in this i have taken tomcat server from AWS) 
 Step8:- for connection tomcat server to jenkins I have configured ssh.
 Step9:- start the tomcat
+
